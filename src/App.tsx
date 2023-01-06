@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import DropDown from './components/drop-down';
+import { createUseStyles } from 'react-jss'
+
+const useStyles = createUseStyles({
+  header: {
+    width: '100%',
+    height: '50px',
+    boxShadow: '0 5px 5px rgba(0,0,0,0.2)',
+    display: 'flex',
+    alignItems: 'center',
+    paddingLeft: '10px'
+  }
+
+})
 
 function App() {
+
+  const styles = useStyles();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className={styles.header}>
+        create DropDown
       </header>
+
+      <DropDown />
+
     </div>
   );
 }
