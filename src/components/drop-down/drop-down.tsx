@@ -1,8 +1,8 @@
 
 import React, { useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss'
-import { useAddItem } from '../hooks/useAddItem';
-import { IList } from '../types/list';
+import { useAddItem } from '../../hooks/useAddItem';
+import { IList } from '../../types/list';
 
 const useStyles = createUseStyles({
     center: {

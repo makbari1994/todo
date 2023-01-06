@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import DropDown from './components/drop-down';
+import DropDown from './components/drop-down/drop-down';
 import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
